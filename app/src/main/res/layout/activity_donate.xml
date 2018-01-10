@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.htetznaing.samfontmaker.Donate">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:onClick="paypal"
+                android:padding="5dp"
+                android:background="@drawable/ivbg"
+                android:layout_marginRight="5dp"
+                android:id="@+id/ivPaypal"
+                android:src="@drawable/paypal"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:onClick="bitcoin"
+                android:padding="5dp"
+                android:background="@drawable/ivbg"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/ivBitcoin"
+                android:src="@drawable/bitcoin"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:layout_below="@id/l1"
+        android:gravity="center_horizontal"
+        android:text="Or\nContant Developer at Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:onClick="dev"
+        android:padding="5dp"
+        android:background="@drawable/ivbg"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/t1"
+        android:src="@drawable/fb"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/7227418838"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

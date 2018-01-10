@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.htetznaing.samfontmaker.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:autoLink="all"
+        android:text="TTF Font Files Not Found!\n Download free ttf fonts here : http://bit.ly/2CWauMx"
+        android:id="@+id/textLOL"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ListView
+        android:layout_marginBottom="55dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</android.support.constraint.ConstraintLayout>

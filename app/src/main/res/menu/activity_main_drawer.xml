@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Convert to zFont">
+        <menu>
+            <item
+                android:id="@+id/nav_ttf"
+                android:icon="@drawable/font"
+                android:title="TTF Files" />
+            <item
+                android:id="@+id/nav_apk"
+                android:icon="@drawable/android"
+                android:title="APK Files" />
+        </menu>
+    </item>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_donate"
+                android:icon="@drawable/donatation"
+                android:title="Donate" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Send" />
+            <item android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About"/>
+            <item android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback"/>
+        </menu>
+    </item>
+
+</menu>
