@@ -13,6 +13,10 @@
                 android:id="@+id/nav_apk"
                 android:icon="@drawable/android"
                 android:title="APK Files" />
+            <item
+                android:id="@+id/nav_zapk"
+                android:icon="@drawable/zapk"
+                android:title="zFont Files" />
         </menu>
     </item>
 

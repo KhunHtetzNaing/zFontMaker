@@ -30,7 +30,7 @@
         android:id="@+id/tvVersion"
         android:textColor="#000"
         android:layout_below="@id/tvName"
-        android:text="Version : 1.0"
+        android:text="Version : 1.1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -39,7 +39,7 @@
         android:id="@+id/tvDate"
         android:textColor="#000"
         android:layout_below="@id/tvVersion"
-        android:text="Release : 10.1.2018"
+        android:text="Release : 11.1.2018"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

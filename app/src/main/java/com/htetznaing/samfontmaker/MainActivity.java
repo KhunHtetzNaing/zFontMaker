@@ -286,11 +286,8 @@ public class MainActivity extends AppCompatActivity
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
 
-                if (fileList.size() <1){
-                    textView.setVisibility(View.VISIBLE);
-                    listView.setVisibility(View.GONE);
-                }else {
-                    textView.setVisibility(View.GONE);
+                if (fileList.size() >=0){
+                  textView.setVisibility(View.GONE);
                     listView.setVisibility(View.VISIBLE);
                     for (int i = 0; i < fileList.size(); i++) {
                         fileSize.add(getSize(fileList.get(i)));
@@ -298,6 +295,10 @@ public class MainActivity extends AppCompatActivity
                         adapter = new myAdapter(MainActivity.this, arrayList, fileSize);
                         listView.setAdapter(adapter);
                     }
+                }else {
+                    textView.setVisibility(View.VISIBLE);
+                    listView.setVisibility(View.GONE);
+
                 }
                 proGress.dismiss();
             }
@@ -678,10 +679,12 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this,About.class));
         }else if (id == R.id.nav_feedback){
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                    "mailto","htetznaing2018@gmail.com", null));
+                    "mailto","htetznaing2018@gmail.com",  null));
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Font Style Maker For SAMSUNG(zFont Maker)");
             emailIntent.putExtra(Intent.EXTRA_TEXT, "Enter your feedback here!");
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
+        }else if (id == R.id.nav_zapk){
+            startActivity(new Intent(MainActivity.this,zAPKs.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -7,7 +7,7 @@
     <ImageView
         android:layout_alignParentLeft="true"
         android:id="@+id/ivIcon"
-        android:src="@drawable/ttf"
+        android:src="@drawable/icon"
         android:layout_width="50dp"
         android:layout_height="50dp" />
 
